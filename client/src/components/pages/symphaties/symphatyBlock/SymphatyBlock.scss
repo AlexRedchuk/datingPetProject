@@ -1,0 +1,112 @@
+.symphaty_block {
+    width: 250px;
+    height: 330px;
+    background-color: #e4e2d4;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.symphaty_block_bottom {
+    position: absolute;
+    bottom: 0;
+    background: rgb(228,226,212);
+    background: linear-gradient(0deg, rgba(228,226,212,0.861771708683473) 45%, rgba(228,226,212,0.561771708683473) 75%, rgba(228,226,212,0.00344537785) 100%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 3;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    align-items: flex-end;
+    animation: show 1s;
+    
+}
+
+.symphaty_name {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.symphaty_verified {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.symphaty_photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .5s all;
+    position: relative;
+}
+
+
+.symphaty_bottom_hover {
+    text-decoration: none;
+    padding-top: 5px;
+    z-index: -2;
+    animation: hide 2s;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background-color: #e4e2d4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.symphaty_bottom_hover span {
+    font-size: 25px;
+    color: #ff7819;
+    font-weight: 600;
+}
+
+.symphaty_message {
+    width: 31px;
+    height: 31px;
+    margin-bottom: -20px;
+}
+
+
+.symphaty_block:hover {
+    
+    cursor: pointer;
+    .symphaty_block_bottom {
+        animation: hide .5s;
+        z-index: -4;
+        transition: .5s all;
+    }
+
+    .symphaty_bottom_hover {
+        animation: show 1s;
+        z-index: 2;
+    }
+    .symphaty_photo {
+        height: 260px;
+        -webkit-box-shadow: 0px 10px 8px 2px #222222;
+        -moz-box-shadow: 0px 10px 8px 2px #222222;
+        box-shadow: 0px 10px 8px 2px #222222;
+        z-index: 5;
+    }
+}
+
+
+@keyframes hide {
+    from {transform: translateY(0px); opacity: 1;}
+    to {transform: translateY(70px); opacity: 1;}
+}
+
+@keyframes show {
+    from {transform: translateY(70px); opacity: 1;}
+    to {transform: translateY(0px); opacity: 1;}
+}

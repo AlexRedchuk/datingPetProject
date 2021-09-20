@@ -1,0 +1,245 @@
+/* Main container */
+.main_container {
+    max-width: 1080px;
+    background-color: #222222;
+    display: flex;
+    z-index: 1;
+    height: 100%;
+}
+
+/* Inner dialog styles */
+.dialog_container {
+    background: #e4e2d4;
+    z-index: 2;
+    max-width: 780px;
+    height: 720px;
+    border-radius: 30px;
+    -webkit-box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+    -moz-box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+    box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+}
+
+.dialog_empty {
+    background: #e4e2d4;
+    z-index: 2;
+    width: 780px;
+    height: 720px;
+    border-radius: 30px;
+    -webkit-box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+    -moz-box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+    box-shadow: -10px 0px 6px -3px rgba(40, 40, 40, 0.75);
+}
+
+.dialog_container ::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.user_info_justify {
+    min-width: 175px;
+    display: flex;
+    align-items: center;
+}
+
+.user_info_block{
+    z-index: 5;
+    position: relative;
+    height: 90px;
+    width: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_avatar {
+    background: #c1c1c1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user_info {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.verified_svg{
+    margin-left: 10px;
+    width:  19px;
+    height: 19px;
+    
+}
+
+.verified_svg *  {
+    fill:  #F18524 !important;
+}
+
+.online_text{ 
+    font-size: 18px;
+    font-weight: 500;
+    color: #6fa0dc;
+}
+
+.more_button {
+    height: 40px;
+    width: 25px;
+}
+
+.more_button:hover {
+    cursor: pointer;
+}
+
+
+.long_line {
+    width: 100%;
+    height: 3px;
+    margin-bottom: -4px;
+}
+
+
+
+/* Inner messages */
+
+.messages_container {
+    height: 525px;
+    width: 100%;
+    padding: 25px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.messages {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Starting message */
+
+.starting_message {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.starting_message_avatar{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 25px;
+}
+
+.about_container {
+    padding-top: 60px;
+    width: 500px;
+    min-height: 200px;
+    text-align: justify;
+    color: #666;
+}
+
+.about_label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about_text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Message input */
+
+.message_input {
+    outline: none;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 18px;
+    width: 740px;
+    border: none;
+    border-radius: 20px;
+    background: #d3b8a6;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.message_input:focus {
+    outline: none;
+    border: none;
+}
+
+.send_button {
+    border: none;
+    background: none;
+    transform: translateY(8px);
+    width: 32px;
+    height: 24px;
+    margin-left: -65px;
+}
+
+.send_button:hover {
+    cursor: pointer;
+}
+
+/* Left conversation zone */
+.conversations_container{
+    width: 300px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+.read_status {
+    top: 15px;
+    right: 15px;
+    width: 13px;
+    height: 13px;
+    background: #6fa0dc;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.conversation_block.active .interlocutor_name {
+    color: #222222;
+}
+
+.conversation_block.active  .interlocutor_last_msg {
+    color: #686868;
+}
+
+.msg_container {
+    display: inline-block;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    max-width: 470px;
+    line-height: 23px;
+    border-radius: 20px;
+    margin: 5px;
+    position: relative;
+}

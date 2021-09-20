@@ -1,0 +1,180 @@
+.meetings_container {
+    width: 1080px;
+    height: 720px;
+    background: #e4e2d4;
+    border-radius: 30px;
+    display: flex;
+}
+
+.user_card_loading {
+    width: 100%;
+    height: 650;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user_card_loading span{
+    font-size: 45px;
+    color: #e4e2d4;
+}
+
+.photo_counter {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 37px;
+    height: 24px;
+    border-radius: 8px;
+    color: #e4e2d4;
+    background: rgba(34, 34, 34, 0.6);
+    line-height: 24px;
+    text-align: center;
+}
+
+.slide_button {
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    transition: .4s all;
+    overflow: hidden;
+    
+}
+.slide_button svg * {
+    fill: #777777 !important;
+    
+}
+
+.right {
+    right: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left {
+    left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.slide_svg_right {
+    transform: rotate(90deg);
+}
+
+.slide_svg_left {
+    transform: rotate(-90deg);
+}
+
+.slide_button:hover {
+    background: rgba(34, 34, 34, 0.6);
+    cursor: pointer;
+
+   
+}
+
+.slide_button:hover svg *{
+    fill: #e4e2d4 !important;
+}
+
+.user_card_photo {
+    width: 625px;
+    height: 680px;
+    margin: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.buttons_container {
+    position: absolute;
+    display: flex;
+    width: 645px;
+    align-self: flex-end;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons_justfier {
+    width: 550px;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    
+}
+
+.photo_justifier {
+    position: relative;
+    width: 665px;
+    height: 680px;
+    display: flex;
+}
+
+.deside_button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #e4e2d4;
+    backdrop-filter: blur(5px) brightness(1.15);
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deside_button:hover svg{
+    width: 55px;
+    height: 55px;
+}
+
+.devide_svg {
+    width: 47px;
+    height: 47px;
+}
+
+.deside_button:hover {
+    cursor: pointer;
+}
+
+#cross * {
+    fill: #0087e6 !important; 
+}
+
+#like_heart *{
+    fill: #ff7819 !important;
+}
+
+.user_card_info {
+    padding-top: 20px;
+}
+.user_card_name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.user_card_verified {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.user_card_info_label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.user_card_about_label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.user_card_about_text {
+    font-size: 16px;
+    font-weight: 500;
+}

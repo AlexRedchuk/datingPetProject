@@ -1,0 +1,19 @@
+.form_main_container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34,34,34);
+    background: linear-gradient(195deg, rgba(34,34,34,1) 0%, rgba(73,41,18,1) 63%, rgba(116,48,0,1) 100%);
+    overflow-y: hidden;
+    z-index: -5;
+}
+
+.form_container {
+    width: 1170px;
+    margin:  auto;
+    display: flex;
+}
+
+.angels {
+    width: 875px;
+    height: 836px;
+}

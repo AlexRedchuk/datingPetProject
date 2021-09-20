@@ -1,0 +1,22 @@
+.container {
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    line-height: 23px;
+    border-radius: 20px;
+    margin: 5px;
+    position: relative;
+    object-fit: cover;
+}
+
+.container.owner {
+    background-color: #ee7627;
+    align-self: flex-start;
+    
+}
+
+.container.other {
+    background-color: #d3b8a6;
+    align-self: flex-end;
+}

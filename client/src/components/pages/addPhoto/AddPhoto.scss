@@ -1,0 +1,16 @@
+.sized_button {
+    all:unset;
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FF7819;
+    line-height: 40px;
+    color: #e4e2d4;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sized_button:hover {
+    cursor: pointer;
+}
